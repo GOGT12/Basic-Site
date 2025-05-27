@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Mi sitio Node</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #e8f0fe; }
+    nav a { margin-right: 15px; text-decoration: none; color: #0366d6; }
+    nav a:hover { text-decoration: underline; }
+    form { max-width: 400px; }
+    label { display: block; margin: 10px 0 5px; }
+    input, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+    button { margin-top: 10px; padding: 10px 20px; background: #0366d6; color: white; border: none; cursor: pointer; }
+    button:hover { background: #024f9d; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/about">Acerca de</a>
+    <a href="/contact-me">Contacto</a>
+  </nav>
+  <h1>Contacto</h1>
+  <form>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="tu@email.com" />
+
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
